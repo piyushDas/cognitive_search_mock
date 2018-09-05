@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cognitive_Search</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-notify/0.2.0/css/bootstrap-notify.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="./styles/vendor/notify.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div id="notification" class="alert alert-danger alert-dismissable col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-12" data-alert="alert"><a href="#" class="close" data-dismiss="alert" aria-label="close">×</a><div id="notification-message"></div></div>
+      </div>
+
+      <div class="row header">
+        <div class=" col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-12" >
+          Enitity Recognition
+        </div>
+      </div>
+
+      <div class="display-box">
+        <form id="analyze-form">
+          <div class="row">
+              <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-12">
+                  <div class="form-group">
+                      <label class = "form-check-label">Identify all people, organizations, locations, events, and products in the text you enter</label>
+                  </div>
+                  <div class="form-group">
+                    <textarea id="searchString" name="searchString" rows="5" cols="60"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-sm btn-primary col-md-5 col-sm-12 col-xs-12" id="search">ANALYZE</button>
+                  </div>
+              </div>
+          </div>
+          </form>
+      </div>
+
+      <div class="display-box">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-12 text-center" id = "search_text_display">
+            Search Results Displayed here.
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8 col-sm-12 col-xs-12 text-center" id = "search_results">
+            <!-- <div class="row card">
+              <div class="">
+                <img src="" alt="" class="">
+              </div>
+              <div class="">
+
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js" charset="utf-8"></script>
+</html>
